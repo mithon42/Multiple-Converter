@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Converter</title>
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+  <!-- CSS File -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container border-radius">
+    <h1 class="text-center p-1 main-title">Multiple Converter</h1>
+    <div class="diverter"></div>
+
+    <div class="select-Area">
+      <label for="category-select" class="lead">Select Category</label>
+      <select id="category-select" class="lead">
+        <option value="area">Area</option>
+        <option value="mess">Mess</option>
+        <option value="length">Length</option>
+      </select>
+    </div>
+
+    <div class="select-wrap">
+      <div class="left">
+        <input type="text" value="0" class="w-100" id="left-input">
+        <select title="Select Left" id="left-select" class="lead w-100">
+          <option value="KM">Kilometer</option>
+          <option value="M">Meter</option>
+          <option value="CM">Centimeter</option>
+        </select>
+      </div>
+      <div class="middle text-center">
+        <span> = </span>
+      </div>
+      <div class="right">
+        <input type="text" value="0" class="w-100" id="right-input">
+        <select title="select Right" id="right-select" class="lead w-100">
+          <option value="KM">Kilometer</option>
+          <option value="M">Meter</option>
+          <option value="CM">Centimeter</option>
+        </select>
+      </div>
+    </div>
+   <div class="diverter"></div>
+
+    <div class="formula-area">
+      <h3>Formula</h3>
+      <p id="formula-text"></p>
+    </div>
+
+    <div class="copy-right">
+      <span>Developer By- <a href="https://www.fb.com/mithon2003" target="_blank">Mithon</a></span>
+    </div>
+  </div>
+  
+
+
+  <!-- js -->
+  <script src="./app.js"></script>
+</body>
+</html>
