@@ -293,123 +293,123 @@ const converter = {
     },
     variants: {
       'tonne:kilogram': {
-        formula: '',
+        formula: 'multiply the mass value by 1000',
         calculation(n){
-          return n 
+          return n * 1000
         }
       },
       'tonne:gram': {
-        formula: '',
+        formula: 'multiply the mass value by 1e+6',
         calculation(n){
-          return n 
+          return n * new Number('1e+6')
         }
       },
       'tonne:milligram': {
-        formula: '',
+        formula: 'multiply the mass value by 1e+9',
         calculation(n){
-          return n 
+          return n * new Number('1e+9')
         }
       },
       'tonne:microgram': {
-        formula: '',
+        formula: 'for an approximate result, multiply the mass value by 1e+12',
         calculation(n){
-          return n 
+          return n * new Number('1e+12')
         }
       },
       'kilogram:tonne': {
-        formula: '',
+        formula: 'divide the mass value by 1e+12',
         calculation(n){
-          return n 
+          return n / new Number('1e+12')
         }
       },
       'kilogram:gram': {
-        formula: '',
+        formula: 'divide the mass value by 1e+6',
         calculation(n){
-          return n 
+          return n / new Number('1e+6')
         }
       },
       'kilogram:milligram': {
-        formula: '',
+        formula: 'divide the mass value by 1000',
         calculation(n){
-          return n 
+          return n / 1000
         }
       },
       'kilogram:microgram': {
-        formula: '',
+        formula: 'multiply the mass value by 1000',
         calculation(n){
-          return n 
+          return n * 1000
         }
       },
       'gram:tonne': {
-        formula: '',
+        formula: 'divide the mass value by 1e+6',
         calculation(n){
-          return n 
+          return n / new Number('1e+6')
         }
       },
       'gram:kilogram': {
-        formula: '',
+        formula: 'divide the mass value by 1000',
         calculation(n){
-          return n 
+          return n / 1000
         }
       },
       'gram:milligram': {
-        formula: '',
+        formula: 'multiply the mass value by 1000',
         calculation(n){
-          return n 
+          return n * 1000
         }
       },
       'gram:microgram': {
-        formula: '',
+        formula: 'multiply the mass value by 1e+6',
         calculation(n){
-          return n 
+          return n * new Number('1e+6')
         }
       },
       'milligram:tonne': {
-        formula: '',
+        formula: 'divide the mass value by 1e+9',
         calculation(n){
-          return n 
+          return n / new Number('1e+9')
         }
       },
       'milligram:kilogram': {
-        formula: '',
+        formula: 'divide the mass value by 1e+6',
         calculation(n){
-          return n 
+          return n / new Number('1e+6')
         }
       },
       'milligram:gram': {
-        formula: '',
+        formula: 'divide the mass value by 1000',
         calculation(n){
-          return n 
+          return n / 1000
         }
       },
       'milligram:microgram': {
-        formula: '',
+        formula: 'multiply the mass value by 1000 ',
         calculation(n){
-          return n 
+          return n * 1000
         }
       },
       'microgram:tonne': {
-        formula: '',
+        formula: 'divide the mass value by 1e+12',
         calculation(n){
-          return n 
+          return n / new Number('1e+12')
         }
       },
       'microgram:kilogram': {
-        formula: '',
+        formula: 'divide the mass value by 1e+9',
         calculation(n){
-          return n 
+          return n / new Number('1e+9')
         }
       },
       'microgram:gram': {
-        formula: '',
+        formula: 'divide the mass value by 1e+6',
         calculation(n){
-          return n 
+          return n / new Number('1e+6')
         }
       },
       'microgram:milligram': {
-        formula: '',
+        formula: 'divide the mass value by 1000',
         calculation(n){
-          return n 
+          return n / 1000
         }
       }
     }
@@ -837,7 +837,7 @@ const converter = {
       'gigahertz:kilohertz': {
         formula: 'multiply the frequency value by 1e+6',
         calculation(n){
-          return n * 6
+          return n * new Number('1e+6')
         }
       },
       'gigahertz:megahertz': {
